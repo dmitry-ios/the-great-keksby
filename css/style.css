@@ -45,17 +45,29 @@ body {
   height: 55px;
 }
 
+.header-logo img {
+  width: 205px;
+  height: 55px;
+}
+
 .main-nav {
   float: left;
   width: 520px;
   margin: 0;
+  margin-top: 18px;
   margin-left: 125px;
   padding: 0;
   list-style: none;
 }
 
 .main-nav li {
+  float: left;
+  margin-right: 50px;
   text-transform: uppercase;
+}
+
+.main-nav li:last-child {
+  margin-right: 0;
 }
 
 .main-nav a {
@@ -72,21 +84,47 @@ body {
 }
 
 .btn {
+  display: inline-block;
+  width: 146px;
+  padding: 10px;
+  font: inherit;
+  vertical-align: top;
+  text-align: center;
   color: #a38b70;
   text-transform: uppercase;
   text-decoration: none;
+  word-wrap: break-word;
+  border: 2px solid #a38b70;
+  border-radius: 2px;
 }
 
 .btn:hover {
   color: #8d745a;
+  border-color: #8d745a;
 }
 
 .btn:active {
   color: rgba(141, 116, 90, 0.3);
+  border-color: #8d745a;
 }
 
 .btn-quick-order {
   float: right;
+  margin-top: 6px;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-quick-order:hover {
+  color: #404040;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-quick-order:active {
+  color: rgba(64, 64, 64, 0.3);
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 
 .promo {
@@ -178,15 +216,19 @@ body {
   border-radius: 5px;
 }
 
+.theory-container:first-child {
+  margin-bottom: 70px;
+}
+
 .reference-title {
-  font-size: 24px;
   font-weight: bold;
+  font-size: 24px;
 }
 
 .reference-source {
-  color: #666666;
-  font-size: 16px;
   font-weight: normal;
+  font-size: 16px;
+  color: #666666;
   font-style: italic;
 }
 
@@ -423,3 +465,15 @@ body {
 .footer-copyright a:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+/* 1
+.feature-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* 2
+.feature-item p {
+  margin: 0;
+}
+*/
